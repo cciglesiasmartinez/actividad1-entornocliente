@@ -18,7 +18,6 @@ h1{
 #contenedorTabla{
     margin-top: 50px;
     width: 70%;
-    
 }
 
 #contedorCarrito{
@@ -97,4 +96,10 @@ input
     display: flex;
     justify-content: space-between;
 
+}
+
+/* Repara problema con las cajas de cantidad */
+
+input {
+    box-sizing: content-box;
 }
