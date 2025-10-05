@@ -4,13 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <title>AgoodShop</title>
 </head>
-<body>
-    <h1> AgoodShop</h1>
-    <div id="contenedor">
+<body class="bg-secondary">
+    
+    <nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">AgoodShop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catálogo
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Juegos</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+    </div>
+    </nav>
+
+    <div id="contenedor" class="px-2">
         <div id="contenedorTabla">
-            <table class="table" id="tablaProductos">
+            <table class="table mb-0 border border-2 border-secondary rounded-4 shadow-sm" id="tablaProductos">
                 <thead>
                     <tr>
                         <th>Producto</th>
@@ -25,7 +63,7 @@
             </table>
         </div>
 
-        <div id="contedorCarrito">
+        <div id="contedorCarrito" class="border border-2 border-secondary rounded-4 shadow-sm p-4">
             <div id="tituloTotal">
                 <h2>Total</h2>
             </div>
@@ -42,7 +80,46 @@
         </div>
         
     </div>
-    
+
+    <footer class="bg-dark text-white text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">AGoodShop</h5>
+                <p>
+                Tu tienda de confianza para los mejores juegos de Xbox.  
+                Ofertas exclusivas y lanzamientos nuevos cada semana 🎮
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Enlaces útiles</h5>
+                <ul class="list-unstyled mb-0">
+                <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Catálogo</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Ofertas</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Síguenos</h5>
+                <ul class="list-unstyled d-flex justify-content-center justify-content-lg-start">
+                <li><a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#" class="text-white"><i class="bi bi-youtube"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3 bg-secondary">
+            © 2025 AGoodShop | Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="./scripts.js"></script>
 </body>
 </html>

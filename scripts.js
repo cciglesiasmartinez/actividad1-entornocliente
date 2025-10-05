@@ -167,6 +167,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
             divTitulo.append(titulo);
             divTitulo.append(ref);
             productoTd.append(divTitulo);
+            titulo.classList.add("fw-bold");
+            titulo.classList.add("mb-2")
 
             //Añadimos el div, para poder contener los botones y el input
             let unidades = 0;
@@ -177,6 +179,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
             //Creacion del boton +
             const masButton = document.createElement('button');
             masButton.textContent = "+";
+            masButton.classList.add("btn-light");
+            masButton.classList.add("btn");
 
             //Evento click boton +
             masButton.addEventListener("click", () => {
@@ -209,6 +213,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
             //Creacion del boton -
             const menosButton = document.createElement('button');
             menosButton.textContent = "-";
+            menosButton.classList.add("btn-light");
+            menosButton.classList.add("btn");
 
             //Evento click del boton -
             menosButton.addEventListener("click", () =>{
@@ -292,7 +298,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
 
     //Obtenemos mediante el fecth los datos de la API
-    fetch("https://jsonblob.com/api/1421811651841286144")
+    fetch("https://jsonblob.com/api/1424531103812870144")
     .then(response => response.json())
     .then(productos => {
         cargarProductos(productos);
