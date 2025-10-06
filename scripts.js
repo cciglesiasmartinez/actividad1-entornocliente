@@ -282,6 +282,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
             const totalTd = document.createElement('td');
             totalTd.id = "id_"+product.SKU;
             totalTd.innerText = "0" + currency;
+            totalTd.classList.add("fw-bold")
+            precioTd.classList.add("text-secondary")
 
             //Se crea el elemento row de la tabla y se le añaden todos los elementos TD
             const tr = document.createElement('tr');
