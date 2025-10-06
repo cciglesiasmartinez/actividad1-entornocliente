@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
                     totalLinea.textContent = total + currency;
                     actualizarTotal();
                 } else if( !Number.isInteger(unidades)){
-                    //Si unidades no es del tipo number ponemos el input a vacio00000001
+                    //Si unidades no es del tipo number ponemos el input a vacio
                     cantidadInput.value = "";
 
                 }  
